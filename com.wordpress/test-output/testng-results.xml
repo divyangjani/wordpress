@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="214" started-at="2020-05-16T22:20:42 PDT" finished-at="2020-05-16T22:20:43 PDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="214" started-at="2020-05-16T22:20:42 PDT" finished-at="2020-05-16T22:20:43 PDT">
+      <class name="com.wordpress.com.wordpress.dashboard">
+        <test-method status="PASS" signature="setupm()[pri:0, instance:com.wordpress.com.wordpress.dashboard@4b1c1ea0]" name="setupm" is-config="true" duration-ms="12984" started-at="2020-05-16T22:20:29 PDT" finished-at="2020-05-16T22:20:42 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupm -->
+        <test-method status="PASS" signature="verifytitle()[pri:0, instance:com.wordpress.com.wordpress.dashboard@4b1c1ea0]" name="verifytitle" duration-ms="55" started-at="2020-05-16T22:20:43 PDT" finished-at="2020-05-16T22:20:43 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytitle -->
+        <test-method status="FAIL" signature="create_post(java.lang.String, java.lang.String)[pri:0, instance:com.wordpress.com.wordpress.dashboard@4b1c1ea0]" name="create_post" duration-ms="0" started-at="2020-05-16T22:20:43 PDT" data-provider="createpost" depends-on-methods="com.wordpress.com.wordpress.dashboard.verifytitle" finished-at="2020-05-16T22:20:43 PDT">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public static void com.wordpress.com.wordpress.dashboard.create_post(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : createpost]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public static void com.wordpress.com.wordpress.dashboard.create_post(java.lang.String,java.lang.String) throws java.lang.InterruptedException requires a @DataProvider named : createpost
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:563)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:776)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_post -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.wordpress.com.wordpress.dashboard@4b1c1ea0]" name="closebrowser" is-config="true" duration-ms="356" started-at="2020-05-16T22:20:43 PDT" finished-at="2020-05-16T22:20:43 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.wordpress.com.wordpress.dashboard -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
