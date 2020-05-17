@@ -39,7 +39,7 @@ public class dashboard extends Baseclass{
 
 	}
 	
-	@Test(dataProvider = "createpost",dependsOnMethods = "verifytitle")
+	@Test(dataProvider = "createpost")
 
 	public static void create_post(String posttitle,String postcontent) throws InterruptedException
 	{
